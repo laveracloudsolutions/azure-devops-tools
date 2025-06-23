@@ -1,6 +1,6 @@
 # Azure DevOps Tools
 
-Docker Images | Azure DevOps Tools (az cli, az devops cli, etc)
+Azure DevOps Tools (az cli, az devops cli, etc) | Client en ligne de commande pour Azure
 
 ## Préparation
 
