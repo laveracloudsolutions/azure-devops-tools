@@ -2,7 +2,7 @@
 
 Azure DevOps Tools (az cli, az devops cli, etc) | Client en ligne de commande pour Azure
 
-## Préparation
+## Préparation (manuelle)
 
 ```bash
 # Build docker Image for "az cli"
@@ -15,3 +15,8 @@ docker build -t azure-devops-tools:dev .
 docker build -t ghcr.io/laveracloudsolutions/azure-devops-tools:${AZ_CLI_VERSION} .
 docker push ghcr.io/laveracloudsolutions/azure-devops-tools:${AZ_CLI_VERSION}
 ```
+
+## Docker Image | GHCR.IO | Github Action
+___
+> [Voir Wiki](https://dev.azure.com/petrolavera/ArchitectureApplicative/_wiki/wikis/Architecture%20applicative/340/Images-Docker-(-GitHub))
+___
