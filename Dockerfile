@@ -2,7 +2,7 @@
 FROM ubuntu:24.04
 
 # Store an Azure CLI version of choice
-ENV AZURE_CLI_VERSION=2.72.*
+ENV AZURE_CLI_VERSION=2.75.*
 
 # Upgrade Image
 RUN apt-get update  && \

@@ -2,7 +2,7 @@
   "images": [
     {
       "folder": ".",
-      "image_tag": "azure-devops-tools:2.72",
+      "image_tag": "azure-devops-tools:2.75",
       "image_additionnal_tag": "azure-devops-tools:latest",
       "platforms": "linux/amd64"
     }
