@@ -16,6 +16,9 @@ docker build -t azure-devops-tools:dev .
 # Tagguer l'image
 docker build -t ghcr.io/laveracloudsolutions/azure-devops-tools:${AZ_CLI_VERSION} .
 docker push ghcr.io/laveracloudsolutions/azure-devops-tools:${AZ_CLI_VERSION}
+
+docker build -t ghcr.io/laveracloudsolutions/azure-devops-tools:latest .
+docker push ghcr.io/laveracloudsolutions/azure-devops-tools:latest
 ```
 
 ## Utilisation (Exemple)
