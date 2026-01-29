@@ -1,0 +1,10 @@
+name: Keepalive
+
+on:
+  schedule:
+    - cron: "0 2 1 * *"
+  workflow_dispatch:
+
+jobs:
+  keepalive:
+    uses: laveracloudsolutions/github-pipeline-library/.github/workflows/keepalive.yml@main
