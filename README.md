@@ -8,7 +8,7 @@ Azure DevOps Tools (az cli, az devops cli, etc)
 
 ```bash
 # Build docker Image for "az cli"
-AZ_CLI_VERSION="2.75.0"
+AZ_CLI_VERSION="2.86.0"
 
 # TODO Passer AZ_CLI_VERSION par paramètre du "docker build"
 docker build -t azure-devops-tools:dev .

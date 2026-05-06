@@ -1,8 +1,8 @@
 # docker build -t azure-devops-tools:dev .
-FROM ubuntu:24.04
+FROM ubuntu:26.04
 
 # Store an Azure CLI version of choice
-ENV AZURE_CLI_VERSION=2.75.*
+ENV AZURE_CLI_VERSION=2.86.*
 
 # Upgrade Image
 RUN apt-get update  && \
@@ -10,11 +10,11 @@ RUN apt-get update  && \
     apt-get install -y --no-install-recommends -qy \
       apt-transport-https ca-certificates curl gnupg lsb-release libicu-dev jq git python3 python3-venv python3-pip tini unzip
 
-# Install Azure Cli
+# Install Azure Cli (on force ici le dépot "noble" en attendant la mise à disposition sur un depot "resolute")
 RUN curl -sL https://packages.microsoft.com/keys/microsoft.asc | \
          gpg --dearmor | \
          tee /etc/apt/trusted.gpg.d/microsoft.gpg > /dev/null \
-         && echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ $(lsb_release -cs) main" | \
+         && echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ noble main" | \
          tee /etc/apt/sources.list.d/azure-cli.list
 
 RUN apt-get update
